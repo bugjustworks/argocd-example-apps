@@ -2,3 +2,11 @@ haproxy-ingress:
   controller:
     service:
       type: "NodePort"
+      httpPorts:
+        - port: 80
+          targetPort: http
+          nodePort: 80
+      httpsPorts:
+        - port: 443
+          targetPort: https
+          nodePort: 443
