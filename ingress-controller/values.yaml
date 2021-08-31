@@ -5,8 +5,8 @@ haproxy-ingress:
       httpPorts:
         - port: 80
           targetPort: http
-          nodePort: 80
+          nodePort: 30080
       httpsPorts:
         - port: 443
           targetPort: https
-          nodePort: 443
+          nodePort: 30443
