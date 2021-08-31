@@ -1,3 +1,4 @@
-controller:
-  service:
-    type: NodePort
+haproxy-ingress:
+  controller:
+    service:
+      type: "NodePort"
